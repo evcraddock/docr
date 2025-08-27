@@ -1,4 +1,4 @@
-.PHONY: install install-dev test clean build upload
+.PHONY: install install-dev install-global uninstall-global upgrade-global test clean build upload
 
 # Install package in development mode
 install:
@@ -8,6 +8,20 @@ install:
 # Install with development dependencies
 install-dev:
 	uv sync --all-extras
+
+# Install system-wide as a standalone tool
+install-global:
+	uv tool install .
+	@echo "docr has been installed globally. You can now use 'docr' from anywhere."
+
+# Uninstall global installation
+uninstall-global:
+	uv tool uninstall docr
+	@echo "docr has been uninstalled from global tools."
+
+# Upgrade global installation
+upgrade-global:
+	uv tool install --upgrade .
 
 # Install system dependencies (Ubuntu/Debian)
 install-system-deps:

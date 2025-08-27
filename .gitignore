@@ -54,6 +54,12 @@ test_output/
 *.md
 !README.md
 
+# Examples folder - ignore PDFs but track the folder
+examples/*.pdf
+examples/*.jpg
+examples/*.png
+examples/*.docx
+
 # Temporary files
 tmp/
 temp/
