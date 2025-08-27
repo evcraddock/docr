@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "Erik Craddock", email = "evcraddock@gmail.com"}
+    {name = "Erik Craddock", email = "erik@craddock.org"}
 ]
 keywords = ["ocr", "pdf", "markdown", "document", "conversion"]
 classifiers = [
